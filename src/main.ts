@@ -21,6 +21,8 @@ setEngine(engine);
     resizeOptions: { minWidth: 768, minHeight: 1024, letterbox: false },
   });
 
+  globalThis.__PIXI_RENDERER__ = engine.renderer;
+
   // Initialize the user settings
   userSettings.init();
 
